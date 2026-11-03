@@ -97,8 +97,8 @@ export default function Sidebar({ userRole = 'Super Admin', userName = 'User' }:
       {/* Brand Header */}
       <div className="h-16 flex items-center px-6 border-b border-slate-800 bg-slate-950/40">
         <Link href="/dashboard" className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-black shadow-md shadow-blue-500/20">
-            <Shirt className="w-5 h-5 text-white" />
+          <div className="w-9 h-9 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center p-1 overflow-hidden shadow-md shadow-blue-500/20">
+            <img src="/icon.png" alt="Eighteen Logo" className="w-full h-full object-contain" />
           </div>
           <div>
             <h1 className="font-extrabold text-white text-base leading-tight tracking-tight">EIGHTEEN</h1>

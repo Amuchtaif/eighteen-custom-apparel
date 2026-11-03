@@ -21,8 +21,8 @@ export default function HomePage() {
       <header className="border-b border-slate-800 bg-slate-950/60 backdrop-blur-md sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center font-black text-white shadow-lg shadow-blue-500/30">
-              <Shirt className="w-6 h-6" />
+            <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center p-1 font-black text-white shadow-lg shadow-blue-500/20 overflow-hidden">
+              <img src="/icon.png" alt="Eighteen Logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <span className="font-extrabold text-xl tracking-tight text-white">EIGHTEEN</span>

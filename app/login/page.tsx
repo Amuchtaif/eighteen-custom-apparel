@@ -55,8 +55,8 @@ export default function LoginPage() {
 
           {/* Logo */}
           <div className="text-center mb-8">
-            <div className="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center font-black text-white mx-auto shadow-lg shadow-blue-500/20 mb-4">
-              <Shirt className="w-6 h-6" />
+            <div className="w-14 h-14 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mx-auto shadow-lg shadow-blue-500/10 mb-4 overflow-hidden p-1.5">
+              <img src="/icon.png" alt="Eighteen Apparel Logo" className="w-full h-full object-contain" />
             </div>
             <h1 className="text-xl font-extrabold text-white">Login Portal Internal</h1>
             <p className="text-xs text-slate-400 mt-1">
