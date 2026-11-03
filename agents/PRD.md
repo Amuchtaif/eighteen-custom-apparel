@@ -46,6 +46,19 @@ Eighteen hadir untuk menjadi pusat operasional yang menghubungkan customer, sale
 
 ---
 
+# Technology Stack
+
+| Layer | Teknologi | Keterangan |
+|---|---|---|
+| Frontend | Next.js (React) + Tailwind CSS | Modern App Router, TypeScript, Responsive Tailwind UI |
+| Kanban | dnd-kit | Drag and drop production kanban board |
+| Kalender | FullCalendar | Kalender deadline pesanan, delivery timeline, & jadwal kerja |
+| Editor catatan (Rilis 2) | BlockNote (berbasis blok; alternatif: TipTap) | Block-based rich text editor untuk catatan & spesifikasi pesanan |
+| Backend & Auth | Next.js API routes | App Router Route Handlers, RBAC, JWT/Session Auth |
+| Database | MySQL | Relational MySQL database (JSON support untuk atribut custom) |
+
+---
+
 ## User Goals
 
 Admin:
