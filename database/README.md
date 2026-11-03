@@ -30,3 +30,4 @@ mysql -u amuchtaif -pqurmutun eighteen < database/eighteen.sql
 Konfigurasi database disimpan di berkas:
 - `.env`
 - `.env.local`
+
