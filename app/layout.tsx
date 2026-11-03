@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id">
-      <body className="min-h-screen bg-slate-50 text-slate-900 antialiased">
+    <html lang="id" className="scroll-smooth">
+      <body className="min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 antialiased transition-colors duration-200">
         {children}
       </body>
     </html>
