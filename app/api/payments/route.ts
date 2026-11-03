@@ -54,7 +54,7 @@ export async function POST(req: NextRequest) {
     await query('UPDATE invoices SET status = ?, updated_at = NOW() WHERE id = ?', [newStatus, invoice_id]);
 
     // Also update order status_pembayaran
-    const orderStatus = newStatus === 'paid' ? 'Lunas' : totalPaid > 0 ? 'DP' : 'Belum DP';
+    const orderStatus = newStatus === 'paid' ? 'Lunas' : totalPaid > 0 ? 'DP' : 'Belum Bayar';
     await query(
       'UPDATE orders SET dp = ?, sisa_tagihan = GREATEST(0, total_tagihan - ?), status_pembayaran = ?, updated_at = NOW() WHERE id = ?',
       [totalPaid, totalPaid, orderStatus, invoice.order_id]
@@ -69,4 +69,3 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: false, message: error.message }, { status: 500 });
   }
 }
-

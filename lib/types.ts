@@ -135,3 +135,4 @@ export interface Attendance {
   attendance_status: 'Hadir' | 'Terlambat' | 'Izin' | 'Sakit' | 'Alpha';
   notes?: string;
 }
+

@@ -52,3 +52,4 @@ export function isAllowedRole(roleName: string, allowedRoles: string[]): boolean
   const r = roleName.toLowerCase();
   return allowedRoles.some((ar) => ar.toLowerCase() === r);
 }
+

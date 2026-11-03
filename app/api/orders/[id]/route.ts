@@ -40,7 +40,7 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
     const totalTagihan = Number(data.total_tagihan) || 0;
     const dp = Number(data.dp) || 0;
     const sisaTagihan = Math.max(0, totalTagihan - dp);
-    const statusPembayaran = dp >= totalTagihan ? 'Lunas' : dp > 0 ? 'DP' : 'Belum DP';
+    const statusPembayaran = dp >= totalTagihan ? 'Lunas' : dp > 0 ? 'DP' : 'Belum Bayar';
 
     await query(
       `UPDATE orders SET
@@ -106,4 +106,3 @@ export async function DELETE(req: NextRequest, { params }: { params: { id: strin
     return NextResponse.json({ success: false, message: error.message }, { status: 500 });
   }
 }
-
