@@ -231,3 +231,4 @@ export default function KanbanBoard({ initialOrders, onStageChange }: KanbanBoar
     </DndContext>
   );
 }
+

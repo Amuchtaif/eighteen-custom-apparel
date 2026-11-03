@@ -165,3 +165,4 @@ export default function Sidebar({ userRole = 'Super Admin', userName = 'User' }:
     </aside>
   );
 }
+
